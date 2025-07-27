@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Admin Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="topnav.css">
+    <link rel="stylesheet" href="switch.css">
+    <link rel="stylesheet" href="../user/notification.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div id="notificationArea" class="notification hidden"></div>
+    <nav class="topnav">
+        <div class="nav-left">
+            <img src="../resources/logo.jpg" alt="Logo" class="nav-logo">
+        </div>
+
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <div class="navright" id="nav-menu">
+            <ul class="topnavL">
+                <li class="selected"><a href="">Manage Items</a></li>
+                <li class="unselected"><a href="/admin/manageUsers.htm">Manage Users</a></li>
+            </ul>
+            <button id="logout">Log Out</button>
+        </div>
+    </nav>
+
+
+    <div id="body">
+
+        <div id="btnDiv"><button id="addItemBtn">Add New
+                Item</button></div>
+        <table id="tableOfItems">
+            <thead>
+                <tr id="headers">
+                    <th id="image" width="10vw">Image</th>
+                    <th id="itemName" width="20vw">Item Name</th>
+                    <th id="itemDesc" width="20vw">Item Description</th>
+                    <th id="price" width="10vw">Last Bid Price</th>
+                    <th id="lastBidder" width="20vw">Last Bidder</th>
+                    <th id="bidOpen" width="10vw">Bid Open?</th>
+                    <th id="bidAction" width="10vw">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src="homepage.js"></script>
+</body>
+
+</html>

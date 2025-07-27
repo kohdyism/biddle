@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Admin Homepage</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="topnav.css">
+    <link rel="stylesheet" href="notification.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="notificationArea" class="notification hidden"></div>
+    <nav class="topnav">
+        <div class="nav-left">
+            <img src="../resources/logo.jpg" alt="Logo" class="nav-logo">
+        </div>
+
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <div class="navright" id="nav-menu">
+            <ul class="topnavL">
+                <li class="unselected"><a href="/user/homepage.htm">All Items</a></li>
+                <li class="unselected"><a href="/user/myBids.htm">My Bids</a></li>
+                <li class="selected"><a href="">Profile</a></li>
+            </ul>
+            <button id="logout">Log Out</button>
+        </div>
+    </nav>
+
+    <div id="body">
+        <h3>Your Profile</h3>
+
+        <div class="yourBid">
+            <label>Your Name</label>
+            <input type="text" id='nameF'>
+            <span class="error-msg" id="name-error"></span>
+            <span class="success-msg" id="name-success"></span>
+        </div>
+
+        <div class="yourBid">
+            <label>Your Email</label>
+            <input type="text" id='emailF'>
+            <span class="error-msg" id="email-error"></span>
+            <span class="success-msg" id="email-success"></span>
+        </div>
+
+        <button id="submit" class="btn">Save Changes</button>
+
+
+    </div>
+
+    <div id="body">
+        <h3>Change Password</h3>
+
+        <div class="yourBid">
+            <label>Your Current Password</label>
+            <input type="password" id='cPasswordF' placeholder="Type your current password here">
+            <span class="error-msg" id="cPassword-error"></span>
+            <span class="success-msg" id="cpassword-success"></span>
+        </div>
+
+        <div class="yourBid">
+            <label>Your New Password</label>
+            <input type="password" id='nPasswordF' placeholder="Type your new password here">
+            <span class="error-msg" id="nPassword-error"></span>
+            <span class="success-msg" id="nPassword-success"></span>
+        </div>
+
+        <button id="changePassword" class="btn">Change Password</button>
+
+
+    </div>
+
+
+    <script src="profile.js"></script>
+</body>
+
+</html>

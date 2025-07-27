@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Admin Homepage</title>
+    <link rel="stylesheet" href="addItem.css">
+    <link rel="stylesheet" href="topnav.css">
+    <link rel="stylesheet" href="switch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="notificationArea" class="notification hidden"></div>
+    <nav class="topnav">
+        <div class="nav-left">
+            <img src="../resources/logo.jpg" alt="Logo" class="nav-logo">
+        </div>
+
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <div class="navright" id="nav-menu">
+            <ul class="topnavL">
+                <li class="unselected"><a href="/admin/homepage.htm">Manage Items</a></li>
+                <li class="unselected"><a href="/admin/manageUsers.htm">Manage Users</a></li>
+            </ul>
+            <button id="logout">Log Out</button>
+        </div>
+    </nav>
+
+
+    <div id="body">
+        <h2>Add New Item</h2>
+        <div class="formFields">
+
+            <form>
+                <div class="yourBid">
+                    <label for="itemNameF">Item Name</label>
+                    <input class="single" id="itemNameF" type="text" placeholder="Type item name">
+                    <span class="error-msg" id="itemname-error"></span>
+                </div>
+
+                <div class="yourBid">
+                    <label for="itemDescF">Item Description</label>
+                    <textarea class="multi" rows="4" cols="50" placeholder="Type item description here"
+                        id="itemDescF"></textarea>
+                    <span class="error-msg" id="itemdesc-error"></span>
+                </div>
+
+                <div class="yourBid">
+                    <label for="priceF">Starting Bid</label>
+                    <div class="inputWithDollar">
+                        <span class="dollarSign">$</span>
+                        <input class="single" id="priceF" type="number" min="0" step="0.01"
+                            placeholder="Type starting bid here">
+                    </div>
+                    <span class="error-msg" id="price-error"></span>
+                </div>
+
+                <div class="yourBid">
+                    <label for="bidOpen">Open Bid?</label>
+                    <label class="switch">
+                        <input type="checkbox" id="bidOpen">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+
+                <div class="yourBid">
+                    <label for="uploadImageF">Upload Image</label>
+                    <input class="upload" id="uploadImageF" type="file" accept="image/*">
+                </div>
+
+                <button type="submit" id="submit">Add Item</button>
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="addItem.js"></script>
+</body>
+
+</html>

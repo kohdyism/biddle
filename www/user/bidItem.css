@@ -1,0 +1,186 @@
+body {
+    background-color: #F0F0F0;
+    margin: 0 auto;
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+}
+
+#body {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    padding: 32px;
+    margin-top: 32px;
+    border-radius: 8px;
+    max-width: 850px;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#imgF {
+    width: 40%;
+    height: 40%;
+}
+
+.subItemInfo {
+    width: 55%;
+}
+
+.yourBid {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.yourBid input {
+    height: 40px;
+    margin-top: 8px;
+    padding-left: 16px;
+    width: 98%;
+    background-color: #F0F0F0;
+    border: 0;
+    border-bottom: 1px solid #898989;
+    font-size: inherit;
+}
+
+#submit {
+    width: 100%;
+    font-size: 16px;
+    background-color: crimson;
+    margin: auto;
+    color: white;
+    margin-top: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.subItemInfo p {
+
+    margin: 0;
+    margin-bottom: 32px
+}
+
+.subItemInfo h4 {
+
+    margin: 0;
+    margin-bottom: 8px
+}
+
+.error {
+    border-color: red;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    display: block;
+}
+
+
+.success-msg {
+    color: black;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    display: block;
+}
+
+/* ========== MOBILE OPTIMIZATION ========== */
+@media screen and (max-width: 600px) {
+
+    #body {
+        margin: 24px;
+        width: auto;
+        padding: 24px 16px;
+        margin-top: 16px;
+        border-radius: 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .itemInfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    #imgF {
+        width: 100%;
+        height: 300px;
+        object-fit: scale-down;
+    }
+
+    .subItemInfo {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .yourBid label {
+        font-size: 1rem;
+    }
+
+    .yourBid input {
+        width: auto;
+        font-size: 1rem;
+        padding-left: 12px;
+    }
+
+    #submit {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 24px;
+    }
+
+    .navright ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navright {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 12px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .topnavL {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topnav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-menu.show {
+        display: flex !important;
+    }
+
+    #nav-menu {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-logo {
+        height: 32px;
+    }
+}

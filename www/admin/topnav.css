@@ -1,0 +1,126 @@
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 24px 32px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px;
+    align-items: center;
+    row-gap: 12px;
+}
+
+.nav-logo {
+    height: 40px;
+    max-width: 100%;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: crimson;
+}
+
+.navright {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+.topnav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.topnavL li a {
+    text-decoration: none;
+    color: black;
+}
+
+li.unselected a:hover {
+    color: crimson;
+}
+
+li.selected a {
+    color: crimson;
+    font-weight: 600;
+}
+
+#logout {
+    background-color: crimson;
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    border-radius: 30px;
+    border-width: 0;
+    padding: 12px 16px;
+    cursor: grab;
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navright {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .navright.show {
+        display: flex;
+    }
+
+    .topnavL {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .topnavL ul {
+        flex-direction: column;
+    }
+
+    .topnavL li {
+        width: 100%;
+    }
+
+    .topnavL li a {
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    #logout {
+        width: 100%;
+        padding: 14px 0;
+        text-align: center;
+    }
+}

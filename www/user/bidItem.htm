@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Admin Homepage</title>
+    <link rel="stylesheet" href="bidItem.css">
+    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="topnav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="notificationArea" class="notification hidden"></div>
+    <nav class="topnav">
+        <div class="nav-left">
+            <img src="../resources/logo.jpg" alt="Logo" class="nav-logo">
+        </div>
+
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <div class="navright" id="nav-menu">
+            <ul class="topnavL">
+                <li class="unselected"><a href="/user/homepage.htm">All Items</a></li>
+                <li class="unselected"><a href="/user/myBids.htm">My Bids</a></li>
+                <li class="unselected"><a href="/user/profile.htm">Profile</a></li>
+            </ul>
+            <button id="logout">Log Out</button>
+        </div>
+    </nav>
+
+    <div id="body">
+        <h2 id="itemNameF">Title</h2>
+        <div class="itemInfo">
+            <img id="imgF">
+            <div class="subItemInfo">
+                <div class="set">
+                    <h4>Item Description</h4>
+                    <p id="descF"></p>
+                </div>
+
+                <div class="set">
+                    <h4>Last Bidder</h4>
+                    <p id="lastBidderF"></p>
+                </div>
+
+                <div class="set">
+                    <h4>Current Bid Amount</h4>
+                    <p id="currentBidF"></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="yourBid">
+            <label>Your Bid</label>
+            <input type=" text" id='bid' placeholder="Type your bid here...">
+            <span class="error-msg" id="bid-error"></span>
+            <span class="success-msg" id="bid-success"></span>
+        </div>
+
+        <button id="submit">Bid for Item</button>
+
+
+    </div>
+
+    <script src="bidItem.js"></script>
+</body>
+
+</html>

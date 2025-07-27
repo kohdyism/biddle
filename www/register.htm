@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="topnav">
+        <img src="resources/logo.jpg" height="40">
+        <ul class="topnavL">
+            <!--             
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li> -->
+
+        </ul>
+    </nav>
+
+    <div class="signUpFormDiv">
+        <form class="signInForm">
+            <h2>Create an Account</h2>
+            <div class="FormFieldSet">
+                <label class="formFieldLabel" for="name">Full Name</label><br>
+                <input class="formField" type="text" id="name" name="name" placeholder="Type your name here"><br>
+                <span class="error-msg" id="name-error"></span>
+                <span class="success-msg" id="name-success"></span>
+            </div>
+
+            <div class="FormFieldSet">
+                <label class="formFieldLabel" for="email">Email</label><br>
+                <input class="formField" type="text" id="email" name="email" placeholder="Type your email here"><br>
+                <span class="error-msg" id="email-error"></span>
+                <span class="success-msg" id="email-success"></span>
+            </div>
+
+            <div class="FormFieldSet">
+                <label class="formFieldLabel" for="pword">Password</label><br>
+                <input class="formField" type="password" id="pword" name="pword"
+                    placeholder="Type your password here"><br>
+                <span class="error-msg" id="pword-error"></span>
+                <span class="success-msg" id="pword-success"></span>
+            </div>
+
+            <div class="FormFieldSet">
+                <label class="formFieldLabel" for="cpword">Confirm Password</label><br>
+                <input class="formField" type="password" id="cpword" name="pword"
+                    placeholder="Confirm your password here"><br>
+                <span class="error-msg" id="cpword-error"></span>
+                <span class="success-msg" id="cpword-success"></span>
+            </div>
+
+
+            <button class="button" id="btn">
+                Register
+            </button>
+
+            <p class="textbottom">Already have an account? <a href="index.htm" class="link">Sign in here</a></p>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

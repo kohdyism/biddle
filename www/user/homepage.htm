@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="topnav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="notificationArea" class="notification hidden"></div>
+    <nav class="topnav">
+        <div class="nav-left">
+            <img src="../resources/logo.jpg" alt="Logo" class="nav-logo">
+        </div>
+
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <div class="navright" id="nav-menu">
+            <ul class="topnavL">
+                <li class="selected"><a href="">All Items</a></li>
+                <li class="unselected"><a href="/user/myBids.htm">My Bids</a></li>
+                <li class="unselected"><a href="/user/profile.htm">Profile</a></li>
+            </ul>
+            <button id="logout">Log Out</button>
+        </div>
+    </nav>
+
+    <div id="body">
+        <table id="tableOfItems">
+            <thead>
+                <tr id="headers">
+                    <th id="image" width="10vw">Image</th>
+                    <th id="itemName" width="20vw">Item Name</th>
+                    <th id="itemDesc" width="20vw">Item Description</th>
+                    <th id="price" width="10vw">Last Bid Price</th>
+                    <th id="lastBidder" width="20vw">Last Bidder</th>
+                    <th id="bidAction" width="10vw">Bid</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <script src="homepage.js"></script>
+</body>
+
+</html>

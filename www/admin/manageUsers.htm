@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Admin Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="topnav.css">
+    <link rel="stylesheet" href="../user/notification.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="notificationArea" class="notification hidden"></div>
+    <nav class="topnav">
+        <div class="nav-left">
+            <img src="../resources/logo.jpg" alt="Logo" class="nav-logo">
+        </div>
+
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <div class="navright" id="nav-menu">
+            <ul class="topnavL">
+                <li class="unselected"><a href="/admin/homepage.htm">Manage Items</a></li>
+                <li class="selected"><a href="">Manage Users</a></li>
+            </ul>
+            <button id="logout">Log Out</button>
+        </div>
+    </nav>
+
+
+    <div id="body">
+        <table id="tableOfItems">
+            <thead>
+                <tr id="headers">
+                    <th id="name" width="40vw">Name</th>
+                    <th id="email" width="40vw">Email</th>
+                    <th id="deleteAction" width="10vw">Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+
+    </div>
+
+
+    <script src="manageUsers.js"></script>
+</body>
+
+</html>

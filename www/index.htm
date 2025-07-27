@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="topnav">
+        <img src="resources/logo.jpg" height="40">
+        <ul class="topnavL">
+            <!--             
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li> -->
+
+        </ul>
+    </nav>
+
+    <div class="signInFormDiv">
+        <form class="signInForm">
+            <h2>Login</h2>
+            <div class="FormFieldSet">
+                <label class="formFieldLabel" for="email">Email</label><br>
+                <input class="formField" type="text" id="email" name="email" placeholder="Type your email here"><br>
+                <span class="error-msg" id="email-error"></span>
+            </div>
+
+            <div class="FormFieldSet">
+                <label class="formFieldLabel" for="pword">Password</label><br>
+                <input class="formField" type="password" id="pword" name="pword"
+                    placeholder="Type your password here"><br>
+                <span class="error-msg" id="pword-error"></span>
+                <span><a href="passwordRecovery.htm" class="forgotPassword">Forgot Password</a></span>
+            </div>
+
+
+            <button class="button" id="btn">
+                Login
+            </button>
+
+            <p class="textbottom">Don't have an account? <a href="register.htm" class="link">Register here</a></p>
+
+            </p>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

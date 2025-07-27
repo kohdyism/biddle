@@ -1,0 +1,162 @@
+body {
+    background-color: #F0F0F0;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    font-size: 1em;
+}
+
+#body {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    padding: 32px;
+    margin-top: 32px
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subItemInfo {
+    width: 60vw;
+}
+
+.yourBid {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 24px;
+    gap: 8px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input.single {
+    height: 40px;
+    padding-left: 16px;
+    width: 100%;
+    background-color: #F0F0F0;
+    border: 0;
+    border-bottom: 1px solid #898989;
+    font-size: inherit;
+}
+
+input.upload {
+    margin-top: 8px;
+    padding-left: 16px;
+    font-size: inherit;
+}
+
+#itemNameF {
+    width: auto;
+}
+
+textarea.multi {
+    width: auto;
+    height: 80px;
+    padding-left: 16px;
+    padding-top: 12px;
+    background-color: #F0F0F0;
+    border: 0;
+    border-bottom: 1px solid #898989;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+#submit {
+    width: 90vw;
+    font-size: 16px;
+    background-color: crimson;
+    color: white;
+    margin-top: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.inputWithDollar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.inputWithDollar .dollarSign {
+    position: absolute;
+    left: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    pointer-events: none;
+}
+
+.inputWithDollar input {
+    padding-left: 28px;
+    /* make room for dollar sign */
+}
+
+.error {
+    border-color: red;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.navright {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+
+    #body {
+        width: 90vw;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .itemInfo,
+    .subItemInfo {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .yourBid {
+        width: auto;
+        margin: 16px;
+    }
+
+    input.single,
+    textarea.multi,
+    input.upload {
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .inputWithDollar input {
+        width: 100%;
+    }
+
+    #submit {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 14px 0;
+        border-radius: 40px;
+        margin-top: 24px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,125 @@
+/* ========== NAV BAR ========== */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 24px 32px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-logo {
+    height: 40px;
+    max-width: 100%;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: crimson;
+}
+
+/* Desktop links */
+.navright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.topnavL {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.topnavL li a {
+    text-decoration: none;
+    color: black;
+}
+
+li.selected a {
+    color: crimson;
+    font-weight: 600;
+}
+
+li.unselected a:hover {
+    color: crimson;
+}
+
+#logout {
+    background-color: crimson;
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 768px) {
+
+    /* show the hamburger and hide desktop links */
+    .hamburger {
+        display: block;
+    }
+
+    .navright {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        /* center items vertically */
+        gap: 16px;
+        margin-top: 12px;
+    }
+
+    .navright.show {
+        display: flex;
+    }
+
+    /* stack the UL vertically and center each link */
+    .topnavL {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* center links horizontally */
+        width: 100%;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .topnavL li {
+        width: 100%;
+    }
+
+    .topnavL li a {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* make logout full width too */
+    #logout {
+        width: 100%;
+        padding: 14px 0;
+        text-align: center;
+    }
+}

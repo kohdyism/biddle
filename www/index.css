@@ -1,0 +1,217 @@
+body {
+    background-color: white;
+    background-image: url(resources/signInBg.png);
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.topnav {
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.topnav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+
+.topnavL li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.signInFormDiv {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUpFormDiv {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signInForm {
+    color: white;
+    margin: auto;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.formFieldLabel {
+    font-size: 14px;
+    width: 100%;
+}
+
+.formField {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 8px 4px;
+    outline: none;
+    /* margin-bottom: 16px; */
+    width: 100%;
+}
+
+.formField:focus {
+    border-bottom: 2px solid #007BFF;
+}
+
+.FormFieldSet {
+    margin-bottom: 32px;
+}
+
+.button {
+    background-color: #E31D37;
+    width: 100%;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 14px;
+
+}
+
+.button:hover {
+    border-color: white;
+    background-color: white;
+    color: crimson;
+    border-width: 1px;
+}
+
+.textbottom {
+    font-size: 14px;
+    text-align: center;
+}
+
+.link {
+    color: white;
+}
+
+a:hover {
+    color: aqua;
+}
+
+.error {
+    border-color: red;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 8px;
+}
+
+
+.success-msg {
+    color: rgb(80, 255, 80);
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 8px;
+}
+
+.forgotPassword {
+    color: white;
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 8px;
+    text-align: right;
+    text-decoration: none;
+
+}
+
+@media (max-width: 600px) {
+    .topnav {
+        width: 100%;
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .signInFormDiv {
+        height: auto;
+        padding: 24px 16px;
+    }
+
+    .signInForm {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .formField,
+    .button {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 14px;
+    }
+
+    .textbottom,
+    .formFieldLabel,
+    .forgotPassword {
+        font-size: 16px;
+    }
+
+    .signUpFormDiv {
+        padding: 16px;
+        height: auto;
+    }
+
+    .signInForm {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    input.formField {
+        font-size: 1rem;
+        padding: 12px 8px;
+        box-sizing: border-box;
+    }
+
+    .FormFieldSet {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 14px;
+        margin-top: 8px;
+    }
+
+    .textbottom {
+        font-size: 1rem;
+        margin-top: 16px;
+    }
+}
