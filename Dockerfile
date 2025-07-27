@@ -14,4 +14,4 @@ RUN bun install
 EXPOSE 10998
 
 # Run your app
-CMD ["bun", "index.js"]
+CMD ["bun","run", "index.js"]
